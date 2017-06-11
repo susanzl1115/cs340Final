@@ -1,0 +1,32 @@
+<div class="container table-responsive">
+
+{{#if results}}
+  <table id="playerTable" class="table table-hover table-condensed">
+  <thead>
+    {{#each keys}}
+        <th>{{this}}</th>
+    {{/each}}
+  </thead>
+
+  {{#each results}}
+    <tr id="row{{id}}">
+      {{#each this}}
+        <td class="{{@key}}">{{this}}</td>
+      {{/each}}
+      <td class="edit-buttons text-right">
+        <button class="btn btn-default editRow" role="button" type="button" name="button" data-toggle="modal" data-target=".bs-example-modal-lg">Edit</button>
+        <button class="btn btn-danger deleteRow" type="button" name="button"><span class="" aria-hidden="true">&times;</span></button>
+      </td>
+    </tr>
+  {{/each}}
+  </table>
+{{/if}}
+
+{{#if error}}
+    <hr>
+  <div class="container-fluid text-center alert alert-warning">
+    <h1 class="warning">{{error}}</h1>
+  </div>
+{{/if}}
+
+</div>

@@ -1,0 +1,36 @@
+{{> header}}
+
+<div class="container-fluid text-center">
+  <h1>Pokemon</h1>
+</div>
+
+<div class="container-fluid col-md-offset-2">
+  <form class="form-inline">
+      <div class="row">
+        <div class="form-group ">
+          <input type="text" class="form-control" id="addPokemonName" placeholder="Pokemon Name">
+        </div>
+        <div class="form-group ">
+          <select class="form-control" name="" id="addClass">
+            <option value="Bulbasaur">Bulbasaur</option>
+            <option value="Charmander">Charmander</option>
+            <option value="Squirtle">Squirtle</option>
+            <option value="Caterpie">Caterpie</option>
+            <option value="Metapod">Metapod</option>
+            <option value="Weedle">Weedle</option>
+            <option value="Kakuna">Kakuna</option>
+            <option value="Pidgey">Pidgey</option>
+            <option value="Rattata">Rattata</option>
+            <option value="Spearow">Spearow</option>
+          </select>
+        </div>
+        
+        <div class="form-group edit-buttons">
+          <button id="addRow" class="btn btn-default" role="button" type="button" name="button">+</button>
+          <button id="reset" class="btn btn-danger" type="button" name="button"><span class="" aria-hidden="true">&times;</span></button>
+        </div>
+      </div>
+  </form>
+</div>
+
+{{> displayTable}}

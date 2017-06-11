@@ -1,0 +1,36 @@
+{{> header}}
+
+<div class="container-fluid text-center">
+  <h1>Player</h1>
+</div>
+
+<div class="container-fluid col-md-offset-3">
+  <form class="form-inline">
+      <div class="row">
+        <div class="form-group ">
+          <input type="text" class="form-control" id="addFirstname" placeholder="Player First Name">
+        </div>
+        <div class="form-group ">
+          <select class="form-control" name="" id="addClass">
+            <option value="Susan">Susan</option>
+            <option value="Will">Will</option>
+            <option value="Samamtha">Samamtha</option>
+            <option value="Chris">Chris</option>
+            <option value="Kris">Kris</option>
+            <option value="Eric">Eric</option>
+          </select>
+        </div>
+
+        <div class="form-group ">
+          <input type="text" class="form-control" id="addLastname" placeholder="Player Last Name">
+        </div>
+  
+        <div class="form-group edit-buttons">
+          <button id="addRow" class="btn btn-default" role="button" type="button" name="button">+</button>
+          <button id="reset" class="btn btn-danger" type="button" name="button"><span class="" aria-hidden="true">&times;</span></button>
+        </div>
+      </div>
+  </form>
+</div>
+
+{{> displayTable}}

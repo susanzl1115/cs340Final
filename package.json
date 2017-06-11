@@ -1,0 +1,50 @@
+{
+  "name": "final_project",
+  "version": "1.0.0",
+  "description": "My final project for OSU's CS340 course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel index.js -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/susanzl1115/CS340.git"
+  },
+  "author": "Lu Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/susanzl1115/CS340/issues"
+  },
+  "homepage": "https://github.com/susanzl1115/CS340#readme",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "bootstrap": "~3.3.6",
+    "brewerydb-node": "0.0.1",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars-dateformat": "~1.0.1",
+    "jquery": "~2.2.1",
+    "morgan": "^1.7.0",
+    "mysql": "~2.10.2",
+    "request": "~2.69.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-transform-class-properties": "^6.9.1",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-react": "^5.1.1",
+    "webpack": "^1.12.12"
+  }
+}
